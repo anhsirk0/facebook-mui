@@ -4,8 +4,8 @@
 - [x] Navbar
 - [x] AccountMenu Dropdown
 - [x] Mobile Sidebar Drawer
-- [x] Sidebar
-- [x] Right SideBar
+- [x] SideMenu
+- [x] Right SideMenu
 - [ ] MainContent
 - [ ] Create Posts
 - [ ] ChatList
