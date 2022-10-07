@@ -3,6 +3,7 @@
 ### Todos
 - [x] Navbar
 - [x] AccountMenu Dropdown
+- [x] Mobile Sidebar Drawer
 - [x] Sidebar
 - [x] Right SideBar
 - [ ] MainContent
