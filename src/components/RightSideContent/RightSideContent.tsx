@@ -1,7 +1,6 @@
 import {
   Card,
   CardContent,
-  CardHeader,
   Divider,
   List,
   ListItem,
@@ -10,7 +9,6 @@ import {
   ListItemText,
   ListSubheader,
 } from "@mui/material";
-import EventIcon from "@mui/icons-material/Event";
 import CakeIcon from "@mui/icons-material/Cake";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
