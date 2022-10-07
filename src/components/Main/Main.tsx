@@ -1,5 +1,5 @@
 import { Box, Container, Stack } from "@mui/material";
-import { SideContent, RightSideContent } from "../../components";
+import { ChatList, RightSideContent, SideContent } from "../../components";
 
 const Main = () => {
   return (
@@ -23,15 +23,17 @@ const Main = () => {
         <Box
           flex={1}
           sx={{
+            paddingTop: "16px",
             height: "100%",
             minHeight: "90vh",
-            bgcolor: "primary.light",
             display: { xl: "block" },
             position: { xl: "fixed" },
             right: { xl: 0 },
-            width: { xl: 80 },
+            width: { xl: 72 },
           }}
-        />
+        >
+          <ChatList />
+        </Box>
       </Stack>
     </Container>
   );

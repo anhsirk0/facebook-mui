@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import {
   Card,
   CardContent,
@@ -56,11 +57,10 @@ const RightSideContent = () => {
     <Card sx={{ padding: "0px" }}>
       <CardContent>
         {lists.map((list, idx) => (
-          <>
+          <Fragment key={idx}>
             {idx !== 0 && <Divider />}
             <List
               dense
-              key={idx}
               subheader={
                 <ListSubheader component="div" id="list-subheader">
                   {list.title}
@@ -79,7 +79,7 @@ const RightSideContent = () => {
                 </ListItem>
               ))}
             </List>
-          </>
+          </Fragment>
         ))}
       </CardContent>
     </Card>

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import {
   Divider,
   List,
@@ -50,10 +51,9 @@ const SideContent = () => {
   return (
     <Stack>
       {lists.map((list, idx) => (
-        <>
+        <Fragment key={idx}>
           {idx !== 0 && <Divider />}
           <List
-            key={idx}
             subheader={
               <ListSubheader
                 component="div"
@@ -71,7 +71,7 @@ const SideContent = () => {
               </ListItemButton>
             ))}
           </List>
-        </>
+        </Fragment>
       ))}
     </Stack>
   );
