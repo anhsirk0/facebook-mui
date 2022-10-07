@@ -1,6 +1,6 @@
-# Facebook homepage with Material Design using MUI
+## Facebook homepage with Material Design using Material UI for React
 
-## Todos
+### Todos
 - [x] Navbar
 - [x] AccountMenu Dropdown
 - [x] Sidebar
