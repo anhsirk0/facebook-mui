@@ -33,7 +33,7 @@ const Post = () => {
     <Card>
       <CardHeader
         avatar={
-          <Avatar alt="User image" src="https://placeimg.com/200/200/people" />
+          <Avatar alt="User image" src="https://placeimg.com/200/200/nature" />
         }
         action={
           <IconButton aria-label="settings">
@@ -41,7 +41,7 @@ const Post = () => {
           </IconButton>
         }
         title="Homer Simpson"
-        subheader="October 8, 2022"
+        subheader="October 8, 2023"
       />
       <CardContent sx={{ pt: 0 }}>
         <Typography variant="body2" color="text.secondary">
@@ -70,7 +70,7 @@ const Post = () => {
           <IconButton aria-label="add to favorites">
             <Avatar
               alt="User image"
-              src="https://placeimg.com/200/200/people"
+              src="https://placeimg.com/200/200/nature"
             />
           </IconButton>
           <StyledInputBase

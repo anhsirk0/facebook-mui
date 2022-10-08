@@ -5,3 +5,4 @@ export { default as SideContent } from "./SideContent/SideContent";
 export { default as RightSideContent } from "./RightSideContent/RightSideContent";
 export { default as ChatList } from "./ChatList/ChatList";
 export { default as Post } from "./Post/Post";
+export { default as CreatePost } from "./CreatePost/CreatePost";

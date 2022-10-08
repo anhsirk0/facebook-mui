@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Stack } from "@mui/material";
 import {
   ChatList,
+  CreatePost,
   Post,
   RightSideContent,
   SideContent,
@@ -27,6 +28,7 @@ const Main = () => {
         </Grid>
         <Grid item md={7} lg={6} xl={7} sx={{ minHeight: "90vh" }}>
           <Stack p={3} spacing={4}>
+            <CreatePost />
             <Post />
             <Post />
           </Stack>

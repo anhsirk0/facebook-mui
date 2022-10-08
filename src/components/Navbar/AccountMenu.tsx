@@ -28,7 +28,7 @@ const AccountMenu = () => {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
       >
-        <Avatar alt="User image" src="https://placeimg.com/200/200/people" />
+        <Avatar alt="User image" src="https://placeimg.com/200/200/animals" />
       </IconButton>
       <Menu
         anchorEl={anchorEl}
