@@ -6,6 +6,6 @@
 - [x] Mobile Sidebar Drawer
 - [x] SideMenu
 - [x] Right SideMenu
-- [ ] MainContent
+- [x] MainContent
 - [ ] Create Posts
-- [ ] ChatList
+- [x] ChatList
