@@ -23,7 +23,7 @@ const ChatList = () => {
   return (
     <Box sx={{ padding: "16px" }}>
       <Stack sx={{ width: "40px" }} spacing={2}>
-        {Array.from(Array(15).keys()).map((idx) => (
+        {Array.from(Array(11).keys()).map((idx) => (
           <StyledBadge
             key={idx}
             overlap="circular"

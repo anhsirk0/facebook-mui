@@ -1,40 +1,70 @@
-import { Box, Container, Stack } from "@mui/material";
-import { ChatList, RightSideContent, SideContent } from "../../components";
+import { Box, Container, Grid, Stack } from "@mui/material";
+import {
+  ChatList,
+  Post,
+  RightSideContent,
+  SideContent,
+} from "../../components";
 
 const Main = () => {
   return (
     <Container maxWidth="xl">
-      <Stack direction="row">
-        <Box
-          flex={{ md: 3, xl: 2 }}
+      <Grid container spacing={3}>
+        <Grid
+          item
+          md={3}
+          lg={2}
+          xl={2}
           sx={{
             display: { xs: "none", md: "block" },
             minHeight: "80vh",
-            padding: "16px 16px 16px 0",
+            mt: 3,
           }}
         >
-          <SideContent />
-        </Box>
-        <Box flex={8} sx={{ minHeight: "90vh" }} />
-        <Box flex={3} p={3} sx={{ display: { xs: "none", lg: "block" } }}>
-          <RightSideContent />
-        </Box>
+          <Box sx={{ position: "fixed" }}>
+            <SideContent />
+          </Box>
+        </Grid>
+        <Grid item md={7} lg={6} xl={7} sx={{ minHeight: "90vh" }}>
+          <Stack p={3} spacing={3}>
+            <Post />
+            <Post />
+          </Stack>
+        </Grid>
+        <Grid
+          item
+          md={2}
+          lg={3}
+          xl={3}
+          sx={{ mt: 3, display: { xs: "none", lg: "block" } }}
+        >
+          {/* Need better way to fix position */}
+          <Box sx={{ position: "sticky", top: 90 }}>
+            <RightSideContent />
+          </Box>
+        </Grid>
+        <Grid
+          item
+          xs={1}
+          xl={0}
+          sx={{ display: { xs: "none", md: "block" } }}
+        />
         {/* Chat icons area */}
         <Box
           flex={1}
           sx={{
             paddingTop: "16px",
-            height: "100%",
-            minHeight: "90vh",
-            display: { xl: "block" },
-            position: { xl: "fixed" },
-            right: { xl: 0 },
-            width: { xl: 72 },
+            height: "inherit",
+            display: { xs: "none", md: "block" },
+            position: { md: "fixed" },
+            bottom: 4,
+            right: { md: 0 },
+            width: { md: 72 },
           }}
         >
           <ChatList />
         </Box>
-      </Stack>
+      </Grid>
     </Container>
   );
 };
