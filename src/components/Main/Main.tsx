@@ -26,7 +26,7 @@ const Main = () => {
           </Box>
         </Grid>
         <Grid item md={7} lg={6} xl={7} sx={{ minHeight: "90vh" }}>
-          <Stack p={3} spacing={3}>
+          <Stack p={3} spacing={4}>
             <Post />
             <Post />
           </Stack>
