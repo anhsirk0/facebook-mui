@@ -10,5 +10,5 @@
 - [x] SideMenu
 - [x] Right SideMenu
 - [x] MainContent
-- [ ] Create Posts
+- [x] Create Posts
 - [x] ChatList
